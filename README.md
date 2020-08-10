@@ -29,7 +29,7 @@ The following are required to use this software:
 
 5. Latest Node.js with NPM. Download it from [here](https://nodejs.org/en/download/).
 
-6. The [Cloud Foundry][cloud_foundry] command-line client
+6. The [IBM Cloud CLI](https://cloud.ibm.com/docs/cli).
 
 7. The Bot Framework Emulator for local testing. To install the Bot Framework Emulator, download it from [here](https://emulator.botframework.com/). Please refer to [this documentation article](https://github.com/microsoft/botframework-emulator/wiki/Getting-Started) to know more about the Bot Framework Emulator.
 
