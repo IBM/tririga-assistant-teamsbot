@@ -1,0 +1,25 @@
+{
+  "name": "tririga_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "author": "Troy Dugger, Vivian Tan",
+  "license": "MIT",
+  "description": "",
+  "engines": {
+    "node": ">= 12.x.x",
+    "npm": "> 6.x.x"
+  },
+  "dependencies": {
+    "bent": "^7.3.7",
+    "botbuilder": "^4.9.3",
+    "dotenv": "^8.2.0",
+    "moment-timezone": "^0.5.31",
+    "restify": "^8.5.1"
+  }
+}
