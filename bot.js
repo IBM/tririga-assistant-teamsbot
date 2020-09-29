@@ -150,7 +150,7 @@ async function handleProxyResponse(response, turnContext) {
                     title: anchorText,
                     value: url
                 }];
-                const card = CardFactory.heroCard('', undefined, buttons);
+                const card = CardFactory.heroCard('', text, buttons);
                 reply.attachments = [card];
                 await turnContext.sendActivity(reply);
             } else {
