@@ -206,6 +206,7 @@ async function getUser(turnContext) {
                 member = _emulatorMembers[_emulatorMemberCount++ % _emulatorMembers.length];
             } else {
                 member = await TeamsInfo.getMember(turnContext, userId);
+                console.log("found member", member);
             }
         } catch (e) {
             console.error(`Error when looking up member with ID ${userId}`, e);
@@ -213,7 +214,8 @@ async function getUser(turnContext) {
         }
         _users.push(userId);
         _users[userId] = {};
-        _users[userId].userContext = _nameHacks[member.email.toLowerCase()];
+        //_users[userId].userContext = _nameHacks[member.email.toLowerCase()];
+        _users[userId].userContext = { email: member.email }
         _users[userId].sessionId = "";
         _users[userId].optionsToDelete = [];
     }
