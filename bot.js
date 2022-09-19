@@ -121,7 +121,7 @@ async function callCloudFunction(webhookUrl, params) {
     console.log(`>>>> Sending to Cloud Function: ${webhookUrl}`, JSON.stringify(params));
     let response = {};
     try {
-        response = await post(webhookUrl, params);
+        response = await post(`${webhookUrl}.json`, params);
     } catch (e) {
         console.error("Got Error when calling cloud function", e);
         throw Error(`CF activation ID: ${e.headers["x-openwhisk-activation-id"]}`);
