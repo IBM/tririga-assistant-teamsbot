@@ -1,3 +1,7 @@
+# WARNING: This repository is no longer maintained
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
+
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) 
 ![nodejs](https://img.shields.io/badge/NodeJS-12-blue.svg) 
 ![semver](https://img.shields.io/badge/semver-2.0.0-blue.svg?cacheSeconds=2592000)
